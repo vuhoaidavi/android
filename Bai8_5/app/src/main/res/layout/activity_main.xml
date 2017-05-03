@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="androidapp.batru.bai8_5.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008800"
+        android:text="Giai phuong trinh bac 2"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:background="#E0FFE0"
+                android:text="Nhap a:" />
+
+            <EditText
+                android:id="@+id/aInput"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="#E0FFE0"
+                android:text="Nhap b:" />
+
+            <EditText
+                android:id="@+id/bInput"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="#E0FFE0"
+                android:text="Nhap c:" />
+
+            <EditText
+                android:id="@+id/cInput"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/tiepTucButton"
+                android:layout_weight="1"
+                android:text="Tiep tuc" />
+
+            <Button
+                android:id="@+id/giaiButton"
+                android:layout_weight="1"
+                android:text="Giai pt" />
+
+            <Button
+                android:id="@+id/thoatButton"
+                android:layout_weight="1"
+                android:text="Thoat" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008800"
+        android:text="Result"
+        android:textColor="#FFF" />
+</LinearLayout>

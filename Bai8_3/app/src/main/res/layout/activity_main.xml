@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidapp.batru.bai8_3.MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="Chuong trinh tinh chi so BMI" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="Nhap ten" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="Chieu cao" />
+
+        <EditText
+            android:id="@+id/chieuCaoInput"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="Can nang" />
+
+        <EditText
+            android:id="@+id/canNangInput"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/BMIbutton"
+            android:layout_weight="1"
+            android:text="Tinh BMI" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="BMI=" />
+
+        <EditText
+            android:id="@+id/BMIview"
+            android:layout_weight="1"
+            android:enabled="false" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="Chan doan:" />
+
+        <EditText
+            android:id="@+id/changDoanView"
+            android:layout_weight="1"
+            android:enabled="false" />
+    </TableRow>
+</TableLayout>
