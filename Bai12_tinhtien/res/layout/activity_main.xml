@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thông tin hóa đơn" />
+
+    <TextView
+        android:id="@+id/txttinhtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtthanhtien"
+        android:layout_alignBottom="@+id/txtthanhtien"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="số tiền là" />
+
+    <Button
+        android:id="@+id/btntiep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnthongke"
+        android:layout_toRightOf="@+id/txtkhach"
+        android:text="tiếp" />
+
+    <EditText
+        android:id="@+id/edtthongke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/btntiep"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edttongkh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txttongkh"
+        android:layout_alignBottom="@+id/txttongkh"
+        android:layout_alignLeft="@+id/edtthongke"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtkhvip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtkhvip"
+        android:layout_alignBottom="@+id/txtkhvip"
+        android:layout_alignRight="@+id/btnthongke"
+        android:layout_toRightOf="@+id/btntiep"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtdoanhthu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72dp"
+        android:layout_toLeftOf="@+id/btntiep"
+        android:text="tổng doanh thu" />
+
+    <EditText
+        android:id="@+id/edtdoanhthu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtdoanhthu"
+        android:layout_alignLeft="@+id/txttinhtien"
+        android:layout_alignRight="@+id/edtkhvip"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtkhvip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtdoanhthu"
+        android:layout_alignParentLeft="true"
+        android:text="tổng số KH là VIP" />
+
+    <TextView
+        android:id="@+id/txttongkh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtkhvip"
+        android:layout_alignLeft="@+id/txtkhvip"
+        android:text="tổng số KH" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edttongkh"
+        android:layout_alignLeft="@+id/txtdoanhthu"
+        android:text="thông tin thống kê" />
+
+    <Button
+        android:id="@+id/btntinhtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtthongke"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/txtsoluong"
+        android:text="tínhTT" />
+
+    <Button
+        android:id="@+id/btnthongke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtthongke"
+        android:layout_toRightOf="@+id/txttinhtien"
+        android:text="thống kê" />
+
+    <TextView
+        android:id="@+id/txtthanhtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btntinhtt"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginBottom="18dp"
+        android:text="thành tiền" />
+
+    <CheckBox
+        android:id="@+id/ckVIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txttinhtien"
+        android:layout_alignLeft="@+id/txtthanhtien"
+        android:layout_marginBottom="14dp"
+        android:text="khách hàng là VIP" />
+
+    <TextView
+        android:id="@+id/txtsoluong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtsoluong"
+        android:layout_alignBottom="@+id/edtsoluong"
+        android:layout_toLeftOf="@+id/btntiep"
+        android:text="số lượng sách" />
+
+    <EditText
+        android:id="@+id/edtsoluong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ckVIP"
+        android:layout_alignLeft="@+id/txttinhtien"
+        android:layout_alignRight="@+id/btnthongke"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtsoluong"
+        android:layout_alignLeft="@+id/edtsoluong"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtkhach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtten"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="tên khách hàng" />
+
+</RelativeLayout>

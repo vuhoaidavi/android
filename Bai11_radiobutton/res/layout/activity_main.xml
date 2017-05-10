@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RadioGroup android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ban co thich anh ay khong?" />
+
+    <RadioButton
+        android:id="@+id/rdratthich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="rat thich" />
+
+    <RadioButton
+        android:id="@+id/rdhoithich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hoi hoi thich" />
+
+    <RadioButton
+        android:id="@+id/rdkolunglay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="khong lung lay" />
+
+    <RadioButton
+        android:id="@+id/rdghet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nhin mat thay ghet" />
+
+    <RadioButton
+        android:id="@+id/rdcongan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nhin mat muon bao cong an" />
+
+    <Button
+        android:id="@+id/btnchon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vote" />
+
+    <TextView
+        android:id="@+id/txtkq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="binh chon xong" />
+    </RadioGroup>
+    </LinearLayout>
