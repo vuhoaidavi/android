@@ -13,7 +13,7 @@ protected void onCreate(Bundle savedInstanceState) {
 	 super.onCreate(savedInstanceState);
 	 setContentView(R.layout.activity_main);
 	 //1. Khởi tạo dữ liệu cho mảng arr (còn gọi là data source)
-	 final String arr[]={"Teo","Ty","Bin","Bo"};
+	 final String arr[]=getResources().getStringArray(R.array.myarray);
 	 //2. Lấy đối tượng Listview dựa vào id
 	 ListView lv=(ListView) findViewById(R.id.lvperson);
 	 //3. Gán Data source vào ArrayAdapter
